@@ -1,0 +1,246 @@
+/* header part start  */
+.header{
+	margin: 0 auto;
+	width: 1200px;
+	height: 100px;
+	background: aqua;
+}
+.logo{
+	padding: 20px;
+	float: left;
+}
+.logo img{
+	width: 50%;
+	height: 50%;
+}
+.menu{
+float: right;
+padding-top: 12px;
+}
+.menu ul{
+	
+	list-style: none;
+}
+.menu ul li{
+	
+	display: inline-block;
+	padding: 10px;
+	
+}
+.menu ul li a{
+	text-decoration: none;
+	font-size:  24px;
+	transition: .5s;
+}
+.menu ul li a:hover{
+	background: blue;
+	color: white;
+	/* border-radius: 10px; */
+}
+/* header part end  */
+/* slider part start  */
+.slider{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+	background-image: url(../images/undraw.png);
+	background: linear-gradient(rgb(79, 44, 235),rgba(0,0,0,.6));
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+.slider h1{
+	position: absolute;
+	top: 30%;
+	left: 42%;
+	color: aliceblue;
+	font-size: 50px;
+}
+.slider p{
+	position: absolute;
+	top: 40%;
+	left: 44%;
+	color: aliceblue;
+	font-size: 18px;
+	/* text-align: center; */
+
+}
+.slider a{
+	position: absolute;
+	top: 50%;
+	left: 44%;
+	color: aliceblue;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid white;
+	color:white;
+	padding: 10px 25px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 20px;
+	transition: .5s;
+}
+.slider a:hover{
+	background: aqua;
+	color: black;
+	
+}
+/* slider part end  */
+ /* services part start  */
+ .services {
+	width: 1200px;
+	margin: 0 auto;
+ }
+ .services-title{
+	text-align: center;
+	
+ }
+ .services-title h1{}
+ .services-title p{}
+ .services-box{
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	/* grid-template-columns: repeat(3,1fr,2); */
+	/* grid-template-columns: repeat(auto-fit, 300px); */
+	grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+	gap: 3px;
+	/* border: 3px solid blue; */
+ }
+ .card{
+	text-align: center;
+	padding: 20px;
+	background: cyan;
+ }
+ .card img{
+	width: 50px;
+	height: 50px;
+	border: 2px solid blue;
+	border-radius: 25%;
+ }
+ .card a{
+	text-decoration:  none;
+	color: white;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 25px;
+ }
+ .card a:hover{
+	background: blue;
+ }
+ .animate{
+	animation: 7s mov linear infinite;
+	position: relative;
+ }
+ @keyframes mov {
+	/* from{background: rgb(7, 226, 179);}
+	to{background: rgb(20, 230, 90);} */
+
+	
+	0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+
+
+  /* 0%   {background-color:red; left:0px; top:200px;}
+  25%  {background-color:yellow; left:800px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:200px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;} */
+ }
+ /* services part end */
+
+
+ /* footer part start */
+ footer{
+	width: 1200px;
+	margin: 0 auto;
+ }
+ .footer-main{
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(380px,auto));
+	gap: 5px;
+ }
+ .block{
+	text-align: center;
+	padding: 15px;
+	background-color: aquamarine;
+	display: grid;
+	grid-template-rows: repeat(auto-fit,minmax(170px,auto));
+ }
+ .block img{
+	padding-right: 10px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+ }
+ .social a{
+	/* position: relative; */
+	text-decoration: none;
+	display: inline;
+	padding: 23px;
+ }
+ .div{
+	/* display: inline; */
+ }
+ /* footer part end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* extra-footer start  */
+ .extra-footer{
+	width: 1200px;
+	margin: 0 auto;
+ }
+ .extra-footer-main{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(33%,auto));
+	gap: .3%;
+ }
+ .extra-footer-card{
+	background-color: bisque;
+	
+	padding: 20px;
+	display: grid;
+	grid-template-rows: repeat(auto-fit,minmax(18%));
+ }
+ .extra-footer-card img{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 7px;
+	margin-right: 7px;
+ }
+ .extra-footer-card a{
+	text-decoration: none;
+	font-size: 20px;
+	color: blue;
+	font-weight: 720px;
+	position: relative;
+	left: 30%;
+ }
+ .extra-footer-card h2{
+	text-align: center;
+ }
+ .box img {
+	border: 2px solid cyan;
+	border-radius: 10px;
+ }
+ .box img:hover{
+	transform: rotate(360deg);
+	transition: 1s;
+ }
+ /* extra-footer end */
